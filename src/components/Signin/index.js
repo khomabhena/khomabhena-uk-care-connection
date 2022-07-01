@@ -1,14 +1,15 @@
 import React from 'react'
-import { Container, Form, FormButton, FormContent, Text2, FormH1, FormInput, FormLabel, FormWrap, Icon, Text } from './SigninElements'
+import { Container, Form, FormButton, FormContent, Text2, FormH1, FormInput, FormLabel, FormWrap, Icon, Text, Img } from './SigninElements'
+import logo from '../../images/logo-care.png'
 
 const Signin = () => {
   return (
     <Container>
         <FormWrap>
-            <Icon to="/">dolla</Icon>
+            <Icon to="/"><Img src={logo} /></Icon>
             <FormContent>
                 <Form action="#">
-                    <FormH1>Sign in to your account</FormH1>
+                    <FormH1>Employeer Account</FormH1>
                     <FormLabel htmlFor='for'>Email</FormLabel>
                     <FormInput type='email' required />
                     <FormLabel htmlFor='for'>Password</FormLabel>

@@ -89,7 +89,7 @@ export const SocialLogo = styled(Link)`
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     margin-bottom: 16px;

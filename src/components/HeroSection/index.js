@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg } from './HeroElements'
-import Video from '../../videos/video.mp4'
+import Video from '../../videos/video1.mp4'
 import { Button } from '../ButtonElement';
 
 const HeroSection = () => {
@@ -13,14 +13,12 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
         <HeroBg>
-            <VideoBg autoPlay lopp muted src={Video} type='video/mp4' />
+            <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
         </HeroBg>
         <HeroContent>
-            <HeroH1>Virtual Banking made Easy</HeroH1>
+            <HeroH1>For Care Homes and Care Givers</HeroH1>
             <HeroP>
-                Sign up for a new account today and receive $250
-                 in credit towards your
-                 next payment
+            Join a network of the world's best care givers &amp; get full-time, long-term care giving jobs with better compensation and career growth.
             </HeroP>
             <HeroBtnWrapper>
                 <Button to="signup" 
@@ -28,7 +26,7 @@ const HeroSection = () => {
                 onMouseLeave={onHover}
                 primary='true'
                 dark='true'>
-                    Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+                    Apply for jobs {hover ? <ArrowForward /> : <ArrowRight />}
                 </Button>
             </HeroBtnWrapper>
         </HeroContent>

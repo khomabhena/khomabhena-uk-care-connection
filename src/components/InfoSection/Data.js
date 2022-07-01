@@ -1,15 +1,15 @@
-import Img1 from '../../images/svg-1.svg'
+import Img1 from '../../images/svg-4.svg'
 import Img2 from '../../images/svg-2.svg'
-import Img3 from '../../images/svg-3.svg'
+import Img3 from '../../images/svg-5.svg'
 
 export const homeObjOne = {
     id: 'about',
-    lightBg: true,
+    lightBg: false,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Premium Bank',
-    headline: 'Unlimited Transactions with zero fess',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees',
+    topLine: 'About Us',
+    headline: 'Professional Care Givers.',
+    description: 'UK Care Connection is an online recruitment portal that facilitates jobseekers and employers to find skilled staff from Africa.',
     buttonLabel: 'Get Started',
     imgStart: true,
     img: Img1,
@@ -20,9 +20,9 @@ export const homeObjOne = {
 }
 export const homeObjTwo = {
     id: 'discover',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Unlimited Access',
     headline: 'Login to your account at any time',
     description: 'We have your covered no matter where you are. All you need is an internet connection and a smart device',
@@ -47,6 +47,6 @@ export const homeObjThree = {
     img: Img3,
     alt: 'Car',
     dark: false,
-    primary: false,
+    primary: true,
     darkText: true
 }

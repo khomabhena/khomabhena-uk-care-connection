@@ -3,6 +3,7 @@ import {FaBars} from 'react-icons/fa'
 import { MobileIcon, Nav, NavbarContainer, NavBtn, NavBtnLink, NavItem, NavLinks, NavLogo, NavMenu } from './NavbarElements'
 import { IconContext } from 'react-icons/lib'
 import { animateScroll as scroll } from 'react-scroll'
+import logo from '../../images/logo-care.png'
 
 const Navbar = ({ toggle }) => {
 
@@ -26,9 +27,10 @@ const Navbar = ({ toggle }) => {
     
   return (
     <>
-    <IconContext.Provider value={{color: '#fff'}}>        <Nav scrollNav={scrollNav}>
+    <IconContext.Provider value={{color: '#fff'}}>        
+    <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/" onClick={toogleHome}>dolla</NavLogo>
+                <NavLogo scrollNav={scrollNav} to="/" onClick={toogleHome} src={logo} />
                 <MobileIcon onClick={toggle}><FaBars /></MobileIcon>
                 <NavMenu>
                     <NavItem>
@@ -57,7 +59,7 @@ const Navbar = ({ toggle }) => {
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                    <NavBtnLink to="/signin">Hire Care Workers</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

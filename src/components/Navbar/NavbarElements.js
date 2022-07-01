@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? `var(--primaryLight)` : 'transparent')};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -25,21 +25,19 @@ export const NavbarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
-    max-width: 1100px;
-
+    padding-left: 5rem;
+    padding-right: 5rem;
 `
 
-export const NavLogo = styled(LinkR)`
-    color: #fff;
+// export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.img`
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
-    font-weight: bold;
-    text-decoration: none;
+    height: ${({scrollNav}) => (scrollNav ? `70px` : '70px')};
+    
 `
 
 export const MobileIcon = styled.div`
@@ -74,16 +72,22 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-    color: #fff;
+    color: var(--primaryDark);
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0 1rem;
+    margin: 0 1rem;
     height: 100%;
     cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
 
     &.active {
-        border-bottom: 3px solid #01bf71;
+        border-bottom: 3px solid var(--primaryDark);
+    }
+
+    :hover {
+        transform: scale(1.1);
     }
 `
 
@@ -99,10 +103,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
-    background: #01bf71;
+    background: var(--primaryDark);
     white-space: nowrap;
     padding: 10px 22px;
-    color: #010606;
+    color: #ffffff;
     font-size: 16px;
     outline: none;
     border: none;

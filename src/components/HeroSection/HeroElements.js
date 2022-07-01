@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {MdArrowForward, MdKeyboardArrowRight} from 'react-icons/md'
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    /* background: #0c0c0c; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,10 @@ export const HeroContainer = styled.div`
         right: 0;
         background: linear-gradient(
             180deg, 
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.6) 100%
+            rgba(165, 222, 241, 0.3) 0%,
+            rgba(112, 175, 206, 0.9) 100%
         ), 
-        linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 
+        linear-gradient(180deg, rgba(58, 123, 153, 0.2) 0%, transparent 
         100%);
         z-index: 2;
     }
