@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button } from '../ButtonElement'
 import { ArrowForward, ArrowRight } from '../HeroSection/HeroElements'
 import { Hero2BtnWrapper, Hero2Gradient, Hero2H1, Hero2H2, Hero2P, HeroImg, HeroSection2Container, TextContent } from './HeroElements2';
-import img from '../../images/svg-3.svg'
+import img from '../../images/svg-4.svg'
 
 const HeroSection2 = () => {
     const [hover, setHover] = useState(false);
