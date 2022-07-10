@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
-export const Title = styled.h3``
+export const Title = styled.h3`
+    color: var(--darkgrey);
+`
 
-export const MenuText = styled.p``
+export const SubTitle = styled.h4`
+    color: var(--darkgrey);
+`
+
+export const MenuText = styled.p`
+    color: var(--darkgreylight);
+`
 
 export const SubHeading = styled.p``
 
@@ -24,9 +32,10 @@ export const ProfileContainer = styled.div`
 export const NavContainer = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    margin: 10px;
+    flex-grow: 2;
     background: var(--whitish);
-
+    width: 20vw;
 `
 
 export const Availability = styled.div`
@@ -66,27 +75,112 @@ export const NavIcon = styled.img``
 
 
 // Letf side
-export const LeftSide = styled.div``
+export const LeftSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 20vw;
+    align-items: center;
+    border-radius: 8px;
+    margin: 10px;
+    border: 2px solid var(--primaryBG);
+    padding: 0 1rem;
+`
 
-export const ProfileImgWrap = styled.div``
+export const ProfileImgWrap = styled.div`
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primaryBG);
+    
+`
 
-export const Name = styled.h2``
+export const Name = styled.h2`
+    margin-top: 2rem;
+    color: var(--darkgrey);
+`
 
-export const Profession = styled.p``
+export const Profession = styled.p` 
+    color: var(--darkgreylight);
+    font-size: 1.2rem;
+`
 
-export const SocialMediaWrap = styled.div``
+export const SocialMediaWrap = styled.div`
+    margin-top: 2rem;
+    display: flex;
+    height: 3rem;
+    justify-content: space-around;
+    align-items: center;
+`
 
-export const IconWrap = styled.div``
+export const IconWrap = styled.div`
+    background: var(--primaryBG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 3rem;
+    padding: 0 8px;
+    border-radius: 4px;
+    margin: 0 0.5rem 1rem;
+`
 
-export const DocumentsWrap = styled.div``
+export const DocumentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+`
 
-export const DocumentName = styled.h4``
+export const DocumentWrap = styled.div`
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+`
 
-export const ContactWrap = styled.div``
+export const IconWrapOutline = styled.div`
+    border: 1px solid var(--primaryBG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 3rem;
+    border-radius: 4px;
+`
 
-export const ContactTitle = styled.p``
+export const ContactContainer = styled.div`
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+`
 
-export const ContactEmail = styled.p``
+export const ContactWrap = styled.div`
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+`
+
+export const ContactTitle = styled.p`
+    font-weight: 700;
+    color: var(--darkgreylight);
+`
+
+export const ContactEmail = styled.p`
+    color: var(--darkgreylight);
+`
 
 export const ContactPhone = styled.p``
 
@@ -95,33 +189,101 @@ export const ContactLocation = styled.p``
 
 
 // Right Side
-export const RightSide = styled.div``
+export const RightSide = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    border: 2px solid var(--primaryBG);
+    border-radius: 8px;
+    margin: 10px;
+`
 
-export const NavWrap = styled.div``
+export const NavWrap = styled.div`
+    margin-top: 2rem;
+    display: flex;
+    color: var(--darkgrey);
+`
 
-export const Overview = styled.h3``
+export const OverviewWrap = styled.div`
+    padding: 1rem 2rem;
+`
 
-export const Update = styled.h3``
+export const Overview = styled.h3`
+    color: var(--darkgrey);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+    padding: 0 2rem 1rem;
+    color: var(--primary);
+`
+
+export const Update = styled.h3`
+    color: var(--darkgrey);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    padding: 0 2rem 1rem;
+`
 
 export const About = styled.p``
 
 
 //Also works for experiences
-export const EducationContainer = styled.div``
+export const EducationContainer = styled.div`
+    margin-top: 2rem;
+`
 
-export const EducationWrap = styled.div``
+export const EducationWrap = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+`
 
-export const LetterWrap = styled.div``
+export const LetterWrap = styled.div`
+    background: var(--primaryDarkAlpha);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 3rem;
+    padding: 0 8px;
+    border-radius: 4px;
+`
 
 export const Letter = styled.p``
 
-export const EducationDetailsWrap = styled.div``
+export const EducationDetailsWrap = styled.div`
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+`
 
 
 //Skills also works for spoken languages
-export const SkillsWrap = styled.div``
+export const SkillsContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+
+export const SkillsWrap = styled.div`
+    background: var(--primaryDarkAlpha);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 0 8px;
+    margin: 1rem 1rem 2rem 0;
+    border-radius: 4px;
+`
 
 export const Skill = styled.p``
+
+export const LanguageWrap = styled.div``
+
+export const Language = styled.p``
 
 
 

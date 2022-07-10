@@ -9,12 +9,14 @@
   --primary: #70AFCE;
   --primaryDark: #3A7B99;
   --primaryDarkDark: #265f79;
+  --primaryDarkAlpha: #265f7938;
   --primaryBG: #dbdddf73;
   --primaryLight: #A5DEF1;
   --white: #f9f9f9;
   --lightgrey: #ececec;
   --transparent: rgba(0, 0, 0, 0.2);
   --darkgrey: #363535;
+  --darkgreylight: #525050;
   --whitish: rgba(255, 255, 255, 0.6);
   --mediumgrey: #706f6f;
   --green: rgb(57, 190, 97);
