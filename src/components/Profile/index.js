@@ -5,6 +5,8 @@ import { HiDocumentText } from 'react-icons/hi'
 import { FaFacebook, FaWhatsapp } from 'react-icons/fa'
 import { FiTwitter, FiPhoneCall } from 'react-icons/fi'
 import ProfileOverview from '../ProfileOverview'
+import ProfileUpdate from '../ProfileUpdate'
+import ProfileNav from '../ProfileNav'
 
 
 const Profile = () => {
@@ -12,27 +14,7 @@ const Profile = () => {
   return (
     <ProfileContainer>
       <NavContainer>
-        <Availability>
-          <SubHeading>Available for jobs</SubHeading>
-        </Availability>
-        <HorizontalLine />
-        <Nav>
-          <NavItem active='true'>
-            <MenuText>Profile</MenuText>
-          </NavItem>
-          <NavItem>
-            <MenuText>Qualifications</MenuText>
-          </NavItem>
-          <NavItem>
-            <MenuText>Experience</MenuText>
-          </NavItem>
-          <NavItem>
-            <MenuText>Suggested Jobs</MenuText>
-          </NavItem>
-          <NavItem>
-            <MenuText>Trainings</MenuText>
-          </NavItem>
-        </Nav>
+        <ProfileNav />
       </NavContainer>
 
       <LeftSide>
@@ -90,10 +72,8 @@ const Profile = () => {
         </NavWrap>
         <HorizontalLine />
         
-        <ProfileOverview />
-        
-
-        
+        {/* <ProfileOverview /> */}
+        <ProfileUpdate />
 
       </RightSide>
 

@@ -1,12 +1,13 @@
 import React from 'react'
-import { ButtonWrap, FileChooser, Image, ImageIcon, ImageWrap, Input, InputContainer, InputLabel, Inputwrap, ProfileUpdateContainer, TextArea, Title, UpdateButton, UpdateForm } from './ProfileUpdateElements'
+import { ButtonWrap, FileChooser, ImageIcon, ImageWrap, Input, InputContainer, InputLabel, Inputwrap, ProfileUpdateContainer, TextArea, Title, UpdateButton, UpdateForm } from './ProfileUpdateElements'
+import { BsFillPersonFill } from 'react-icons/bs'
 
 function ProfileUpdate() {
   return (
     <ProfileUpdateContainer>
         <Title>My Account</Title>
         <ImageWrap>
-            <Image />
+            <BsFillPersonFill />
             <ImageIcon />
         </ImageWrap>
 
@@ -47,7 +48,7 @@ function ProfileUpdate() {
                 </Inputwrap>
             </InputContainer>
             <InputLabel>Attachements CV</InputLabel>
-            <FileChooser />
+            <FileChooser type='file' />
 
             <Title>Social Media</Title>
             <InputContainer>
@@ -92,7 +93,7 @@ function ProfileUpdate() {
         </UpdateForm>
 
         <ButtonWrap>
-            <UpdateButton name='update' />
+            <UpdateButton>Update</UpdateButton>
         </ButtonWrap>
         
     </ProfileUpdateContainer>
